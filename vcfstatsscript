@@ -1,6 +1,6 @@
 ### script to generate statistics for a VCF file
 ### code is from https://speciationgenomics.github.io/filtering_vcfs/
-### thanks and citations go to Mark Ravinet and Joana Meier, as well as the excellent course
+### thanks and citations go to Mark Ravinet and Joana Meier, as well as the excellent course that they ran!
 #subsample your vcf - no need to use whole dataset
 bcftools view yourinfile.vcf.gz | vcfrandomsample -r 0.012 > youroutfilesubset.vcf
 bgzip youroutfilesubset.vcf
